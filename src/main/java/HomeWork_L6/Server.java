@@ -15,9 +15,9 @@ public class Server {
             while(! line.equals("")) {
                 line = in.readLine();
                 System.out.println(line);
-                out.write("OK");
             }
 
+            out.write("OK");
             out.flush();
             out.close();
         } catch(IOException e) {
